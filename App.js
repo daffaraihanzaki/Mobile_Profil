@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View,Image} from 'react-native';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -21,6 +21,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
+      <Image source={require('./daffa.jpg')}></Image>
         <Text style={styles.welcome}>Daffa Raihan Zaki</Text>
         <Text style={styles.instructions}>Kelas XI RPL 4</Text>
         <Text style={styles.instructions}>No Absen 08</Text>
